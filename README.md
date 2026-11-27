@@ -11,7 +11,7 @@ Open `index.html` in je browser.
 3. Ga naar **Settings → Pages**.
 4. Kies bij **Build and deployment** voor **Deploy from a branch**.
 5. Selecteer branch **main** en map **/(root)** en klik **Save**.
-6. Na enkele minuten verschijnt jullie website op `https://JULLENAAM.github.io/vendwatch/`.
+6. Na enkele minuten verschijnt jullie website op `https://vendwatchofficial.github.io/vendwatch/`.
 
 ## Belangrijk
 Dit is een front-end prototype met voorbeeldlocaties en fictieve voorraad. GitHub Pages host statische bestanden en biedt op zichzelf geen database, accounts of live koppeling met sensoren. Om echte voorraadgegevens te tonen, moeten jullie later een backend/database en een API koppelen. De huidige zoekfunctie, filters en automaatdetails werken alvast met de demo-informatie.
