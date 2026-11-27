@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VendWatch — vind producten in automaten in jouw buurt en beheer voorraad slimmer.">
+  <title>VendWatch — Slimmer snacken. Slimmer beheren.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="VendWatch home"><span class="brand-mark">V</span><span>vend<span class="brand-light">watch</span></span></a>
+  <nav class="desktop-nav"><a href="#ontdek">Ontdek automaten</a><a href="#hoe-werkt-het">Hoe werkt het?</a><a href="#voor-bedrijven">Voor bedrijven</a></nav>
+  <div class="nav-actions"><button class="text-btn" id="supplierLogin">Leveranciersportaal</button><a class="btn btn-dark btn-small" href="#ontdek">Vind een automaat <span>↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow"><span class="pulse"></span> ALTIJD WETEN WAT ER IN DE BUURT IS</div>
+    <h1>Jouw favoriete snack.<br><span>Altijd binnen bereik.</span></h1>
+    <p class="hero-copy">Geen lege automaten of onnodige omwegen meer. Ontdek wat er beschikbaar is in automaten in jouw buurt — in realtime.</p>
+    <div class="hero-buttons"><a class="btn btn-lime" href="#ontdek">Ontdek automaten <span>→</span></a><a class="btn btn-outline" href="#hoe-werkt-het">Hoe werkt VendWatch?</a></div>
+    <div class="hero-proof"><div class="avatar-stack"><i>J</i><i>M</i><i>A</i></div><span>Een slimmere manier om<br><b>onderweg iets te vinden.</b></span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+    <div class="phone">
+      <div class="phone-top"><span>9:41</span><span>●●● ▰</span></div>
+      <div class="phone-head"><div><small>GOEDEMIDDAG 👋</small><b>Wat zoek je?</b></div><span class="mini-avatar">L</span></div>
+      <div class="phone-search">⌕ <span>Zoek snacks, drankjes...</span></div>
+      <div class="phone-map"><div class="map-road road-a"></div><div class="map-road road-b"></div><div class="map-road road-c"></div><span class="map-pin pin-a">●</span><span class="map-pin pin-b">●</span><span class="map-pin pin-c">●</span><div class="map-label">ANTWERPEN</div></div>
+      <div class="phone-section"><b>In jouw buurt</b><small>Bekijk alles →</small></div>
+      <div class="phone-machine"><div class="machine-thumb">🥤</div><div><b>Campus automaat</b><small>Universiteit Antwerpen</small><div class="stock-line"><span></span> 12 producten beschikbaar</div></div><strong>250 m</strong></div>
+      <div class="phone-machine"><div class="machine-thumb snack">🥨</div><div><b>Komida — gebouw R</b><small>Campus Drie Eiken</small><div class="stock-line"><span></span> 8 producten beschikbaar</div></div><strong>600 m</strong></div>
+      <div class="phone-nav"><span>⌂<small>Ontdek</small></span><span>♡<small>Favorieten</small></span><span>◷<small>Activiteit</small></span><span>◉<small>Profiel</small></span></div>
+    </div>
+    <div class="float-card float-stock"><span class="float-icon">✓</span><div><b>Voorraad geüpdatet</b><small>Alles weer beschikbaar</small></div></div>
+    <div class="float-card float-live"><span class="live-dot"></span><div><b>Live voorraad</b><small>Informatie in realtime</small></div></div>
+  </div>
+  <div class="hero-bottom"><span>SLIMME VOORRAAD. SLIMME KEUZES.</span><span>SCROLL OM TE ONTDEKKEN ↓</span></div>
+</section>
+<section class="section discover" id="ontdek">
+  <div class="section-heading"><div><div class="eyebrow dark-eyebrow">VOOR IEDEREEN</div><h2>Wat ligt er <span>in jouw buurt?</span></h2><p>Vind automaten, check het aanbod en vertrek nooit meer voor niets.</p></div><div class="live-pill"><span class="pulse"></span> DEMO — VOORBEELDLOCATIES</div></div>
+  <div class="explore-tools"><div class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Zoek op product, locatie of automaat..."></div><select id="categoryFilter" aria-label="Filter categorie"><option value="all">Alle categorieën</option><option value="drank">Drank</option><option value="snack">Snacks</option><option value="gezond">Gezond</option></select><select id="availabilityFilter" aria-label="Filter beschikbaarheid"><option value="all">Alle voorraad</option><option value="available">Op voorraad</option><option value="low">Bijna uitverkocht</option></select></div>
+  <div class="machine-grid" id="machineGrid">
+    <article class="machine-card" data-category="drank" data-stock="available" data-search="campus automaat universiteit antwerpen drank water cola">
+      <div class="machine-art art-blue"><span class="art-tag">● Open</span><div class="vending-illustration"><div class="vending-screen"></div><div class="vending-shelves"><i>🥤</i><i>🧃</i><i>💧</i><i>🥤</i><i>🧊</i><i>🥤</i></div><div class="vending-slot"></div></div><span class="art-caption">CAMPUS SERIES / 01</span></div>
+      <div class="machine-info"><div class="card-meta"><span>UNIVERSITEIT ANTWERPEN</span><span>250 m</span></div><h3>Campus automaat</h3><p>Dranken & snacks · Gebouw C</p><div class="card-bottom"><div><b>12</b><small>producten beschikbaar</small></div><button class="arrow-btn" data-machine="campus">↗</button></div></div>
+    </article>
+    <article class="machine-card" data-category="snack" data-stock="low" data-search="komida gebouw r campus drie eiken snacks koek chips">
+      <div class="machine-art art-orange"><span class="art-tag warning">● Beperkte voorraad</span><div class="vending-illustration orange-machine"><div class="vending-screen"></div><div class="vending-shelves"><i>🍪</i><i>🥨</i><i>🍫</i><i>🍿</i><i>🥜</i><i>🍪</i></div><div class="vending-slot"></div></div><span class="art-caption">CAMPUS SERIES / 02</span></div>
+      <div class="machine-info"><div class="card-meta"><span>CAMPUS DRIE EIKEN</span><span>600 m</span></div><h3>Komida — gebouw R</h3><p>Snacks & tussendoortjes</p><div class="card-bottom"><div><b>8</b><small>producten beschikbaar</small></div><button class="arrow-btn" data-machine="komida">↗</button></div></div>
+    </article>
+    <article class="machine-card" data-category="gezond" data-stock="available" data-search="sportcentrum health corner gezonde snacks water fruit">
+      <div class="machine-art art-green"><span class="art-tag">● Open</span><div class="vending-illustration green-machine"><div class="vending-screen"></div><div class="vending-shelves"><i>🍎</i><i>🥛</i><i>🥝</i><i>💧</i><i>🥗</i><i>🍌</i></div><div class="vending-slot"></div></div><span class="art-caption">FRESH SERIES / 01</span></div>
+      <div class="machine-info"><div class="card-meta"><span>SPORTCENTRUM</span><span>900 m</span></div><h3>Health Corner</h3><p>Gezonde snacks & dranken</p><div class="card-bottom"><div><b>15</b><small>producten beschikbaar</small></div><button class="arrow-btn" data-machine="health">↗</button></div></div>
+    </article>
+  </div>
+  <p class="demo-note">* Dit zijn voorbeeldautomaten voor de website-demo. Locaties, afstanden en voorraden zijn nog niet live gekoppeld.</p>
+</section>
+<section class="how-section" id="hoe-werkt-het"><div class="how-inner"><div class="eyebrow">EENVOUDIG. SLIM. HANDIG.</div><h2>Van zoeken tot snacken<br><span>in drie stappen.</span></h2><div class="steps">
+  <div class="step"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Ontdek</h3><p>Bekijk automaten in je buurt of zoek gericht naar jouw favoriete product.</p></div>
+  <div class="step"><span class="step-number">02</span><div class="step-icon">▦</div><h3>Check de voorraad</h3><p>Zie welke producten nog beschikbaar zijn voordat je naar de automaat wandelt.</p></div>
+  <div class="step"><span class="step-number">03</span><div class="step-icon">↗</div><h3>Ga ervoor</h3><p>Kies de dichtstbijzijnde automaat en haal precies wat je zoekt.</p></div>
+</div></div></section>
+<section class="business-section" id="voor-bedrijven"><div class="business-copy"><div class="eyebrow dark-eyebrow">VOOR AUTOMATENBEHEERDERS</div><h2>Jij beheert de voorraad.<br><span>Wij houden ze in zicht.</span></h2><p>Met VendWatch krijg je inzicht in de voorraad van je automaten. Zie wat goed verkoopt, ontdek waar bijvullen nodig is en beheer meerdere locaties vanuit één overzicht.</p><ul><li><span>✓</span> Voorraad per automaat in één overzicht</li><li><span>✓</span> Inzicht in populaire producten</li><li><span>✓</span> Sneller weten wanneer bijvullen nodig is</li></ul><button class="btn btn-dark" id="dashboardButton">Bekijk het leveranciersportaal <span>→</span></button></div>
+  <div class="dashboard-preview"><div class="dash-top"><div><span class="dash-logo">V</span><b>vendwatch <small>/ DASHBOARD</small></b></div><span class="dash-status"><i></i> Systeem actief</span></div><div class="dash-welcome"><div><small>VRIJDAG 27 NOVEMBER 2026</small><h3>Goedemiddag, beheerder 👋</h3><p>Hier is het overzicht van jouw automaten.</p></div><span class="dash-avatar">B</span></div><div class="stats-row"><div><small>ACTIEVE AUTOMATEN</small><b>12</b><em>+2 deze maand</em></div><div><small>PRODUCTEN OP VOORRAAD</small><b>184</b><em>van 216 totaal</em></div><div><small>BIJVULLEN NODIG</small><b class="orange-text">3</b><em>Actie vereist</em></div></div><div class="dash-table"><div class="table-title"><b>Voorraadstatus</b><small>Alle locaties⌄</small></div><div class="table-row"><span class="table-dot green-dot"></span><span>Campus automaat</span><span>Universiteit Antwerpen</span><b>Goed</b></div><div class="table-row"><span class="table-dot orange-dot"></span><span>Komida — gebouw R</span><span>Campus Drie Eiken</span><b class="orange-text">Laag</b></div><div class="table-row"><span class="table-dot green-dot"></span><span>Health Corner</span><span>Sportcentrum</span><b>Goed</b></div></div><div class="dash-chart"><div><b>Verkoop deze week</b><small>+12,8% tegenover vorige week</small></div><div class="bars"><i style="height:38%"></i><i style="height:56%"></i><i style="height:44%"></i><i style="height:75%"></i><i style="height:61%"></i><i style="height:91%"></i><i style="height:68%"></i></div></div></div>
+</section>
+<section class="cta-section"><div><div class="eyebrow">SLIMMER OMGAAN MET VOORRAAD</div><h2>Altijd zicht op wat<br>er beschikbaar is.</h2><p>VendWatch verbindt automaten, beheerders en consumenten.</p></div><a class="btn btn-lime" href="#ontdek">Ontdek VendWatch <span>→</span></a></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">V</span><span>vend<span class="brand-light">watch</span></span></a><span>© 2026 VendWatch. Slimme voorraad, slimme keuzes.</span><div><a href="#ontdek">Ontdek</a><a href="#voor-bedrijven">Voor bedrijven</a></div></footer>
+<div class="modal-backdrop" id="modal"><div class="modal"><button class="modal-close" id="closeModal" aria-label="Sluiten">×</button><div class="modal-icon">▦</div><div class="eyebrow dark-eyebrow">VEN­DWATCH DEMO</div><h2 id="modalTitle">Campus automaat</h2><p id="modalLocation">Universiteit Antwerpen · Gebouw C</p><div class="product-list" id="productList"></div><small class="modal-footnote">Voorraad is fictieve demodata en wordt niet live bijgewerkt.</small></div></div>
+<div class="toast" id="toast">Dit is een demo-omgeving.</div>
+<script src="script.js"></script>
+</body></html>
